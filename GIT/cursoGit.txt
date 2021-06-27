@@ -50,6 +50,8 @@ git remote add origin https://github.com/diogovl/DIO_Kotlin_Bootcamp_2021.git
 git remote -v
 git push origin master
 
+git pull (puxar o que esta no repositório)
+git pull origin master
 
 
 
