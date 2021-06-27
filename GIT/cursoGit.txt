@@ -1,0 +1,41 @@
+** CURSO GIT Digital Innovation One**
+===============================
+**Comandos Básicos Unix/Entendendo GIT**
+
+cd
+ls
+mkdir
+rm -rf
+echo hello > hello.txt
+openssl sha1
+echo 'conteudo' | git hash-object --stdin
+echo -e 'conteudo' | openssl sha1
+echo -e 'blob 9\0conteudo' | openssl sha1
+
+Ler sobre: https://git-scm.com/
+---------------------------------------
+blobs -> tress -> commits
+
+GIT:
+blobs (tipo, tamanho, \0, conteúdo do arquivom metadados do GIT)
+trees ( armazenam blobs, trees podem apontar para outras trees)
+commits (aponta para um parente, último commit, autor, para trees, etc)
+===============================
+===============================
+**Comandos GIT**
+
+git init
+git add
+git commit
+
+ls -a
+
+git config --global user.email "myemail"
+git config --global user.name myusername
+
+git add *
+git commit -m "1st commit"
+
+git status
+git add strogonoff.md receitas/
+
