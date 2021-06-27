@@ -1,4 +1,4 @@
-#Strogonoff de Frango
+# Strogonoff de Frango
 
 
 ### Ingredientes
@@ -11,7 +11,7 @@
 - 7.   champignon
 - 8.   batata palha e arroz branco para acompanhar
 
-#Modo de Preparo
+# Modo de Preparo
 
 - 1.    Em uma pena a fogo médio, acrescente...
 - 2.    Assim que o frango estiver bem cozido...
