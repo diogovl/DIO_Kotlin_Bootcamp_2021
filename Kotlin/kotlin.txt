@@ -1,0 +1,266 @@
+Documentação
+
+https://developer.android.com/docs?hl=pt-br
+
+https://play.kotlinlang.org/
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+	println(Int.MAX_VALUE)
+    println(Float.MAX_VALUE)
+    println(Long.MAX_VALUE)
+    println(Byte.MAX_VALUE)
+    println(Short.MAX_VALUE)
+
+	toByte()
+	toShort()
+	toInt()
+	toLOng()
+	toFLoat()
+	toDouble()
+	toChar()
+	toString()
+
+fun main() {
+   var x: Double = 3.14
+   println("Double x: $x")
+   println("x convert int: ${x.toInt()}")
+}
+
+var (mutável)
+val (fixo)
+const val (atribuído durante compilação)
+
+
+a.plus(b)
+a.minus(b)
+a.times(b)
+a.div(b)
+a.mod(b)
+
+a.comparetO(b) > 0
+a.compareTo(b) < 0
+
+a.compareTo(b)>=0
+a.compareTo(b)=<0
+
+a.equal(b)
+!(a.equals(b))
+
+in
+!in
+range =>>>>>>>> int...int
+
+listOf(1,2,3,4,5,6,7,8)
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+STRINGS****
+
+first()
+last()
+String.length
+String[index]
+capitalize()
+toUpperCase()
+toLowerCase()
+decapitalize()
+
+remoção de espaços:
+trimEnd(), trimStart(), trim()
+
+subt:
+replace(x,y)
+
+${valor.format(valor)}
+
+
+isEmpty()
+isBlank()
+isNullorBlank()
+isNullOrEmpty()
+------------------------------------------------------
+------------------------------------------------------
+Functions:
+
+//Function 1 //
+
+fun main() {
+
+val z: Int
+    
+//z = calculate(34,90,::sum)
+//println("z: $z")
+
+
+z = calculate(34,90){a,b -> 
+    println("vou calcular!") 
+    a+b
+}
+println(z)
+
+/*z = calculate(34,90){a,b -> a*b}
+println("z: ${z}")   
+}*/
+//////// /////////////
+
+
+}
+
+fun sum(a1:Int, a2:Int):Int = a1.plus(a2)
+
+fun calculate(n1:Int,n2:Int,operation:(Int,Int)->Int):Int{
+    val result = operation(n1,n2)
+    return result
+}
+
+/*
+fun calculate(n1:Int,n2:Int,operation:(Int,Int)->Unit):Int{
+    val result = operation(n1,n2)
+    return result
+}
+
+*/
+====================================
+function 2
+
+
+fun main() {
+
+val z: Int
+    
+//z = calculate(34,90,::sum)
+//println("z: $z")
+
+
+calculate(34,90){a,b -> 
+    println("vou calcular! $a + $b")   
+}
+//println(z)
+
+/*z = calculate(34,90){a,b -> a*b}
+println("z: ${z}")   
+}*/
+//////// /////////////
+
+
+}
+
+fun sum(a1:Int, a2:Int):Int = a1.plus(a2)
+
+fun calculate(n1:Int,n2:Int,operation:(Int,Int)->Unit){
+    val result = operation(n1,n2)
+}
+======================================
+======================================
+Functions Extensions
+
+fun String.randomCApitalizedLetter() = this[(0..this.length-1).random()].toUpperCase()
+
+======================================
+======================================
+
+Estruturas de Controle
+
+if(exp){
+}else if(exp2){
+else{
+}
+
+
+when{ // é o nosso switch case
+	case1 -> {}
+	case2 -> {}
+	else -> {}
+}
+
+val a:Int? = null
+var number = a ?: 0
+
+======================================
+======================================
+Atribuição
+
+
+    var a = 3
+    var b = 7
+    
+val MaxValue = if (a > b) a else if ( a< b) b else b
+
+val minValue = if(a>b){
+	println("b($b) eh o menor valor")
+	b
+}else if( a < b){
+	println("a($a) eh o menor valor")
+	a
+}else{
+	println("os valores sao iguais")
+	b
+}
+
+--------------------------------------------------------------------------------
+ELVIS Operator
+
+fun main() {
+    
+val a:Int? = null
+val b:Int? = 9
+var number = a?: b?: 0
+    
+println(number)
+
+
+}
+
+--------------------------------------------------------------------------------
+fun main() {
+    
+val grade = (0..10).random()
+	println(grade.getStudentStatus())
+}
+
+fun Int.getStudentStatus():String{
+    println("nota $this")
+    return when(this){
+        in 0..4 -> "Reprovado"
+        in 5..7 -> "Mediano"
+        in 8..9 -> "Bom"
+        10 -> "Excelente"
+        else -> "Indefinido"
+    }
+    
+}
+--------------------------------------------------------------------------------
+
+Estruturas de Repetição
+
+
+
+Aceita comandos in,range,until, downTo, step
+
+while(cond){
+
+}
+
+do{
+}while()
+
+for(i in 0..20 step 2){
+	println(i)
+}
+
+==========================
+fun letters(){
+	val sArray = "Olha essa string!"
+
+sArray.forEach{
+	println("Oi")
+}
+
+}
+============================
+calculadora que dado 2 valores Float? 
+e um numero corresponde a operacao (constante), retorne e imprima
+o resultado como Float ou uma mensagem de erro caso um dos valores seja nulo
+
