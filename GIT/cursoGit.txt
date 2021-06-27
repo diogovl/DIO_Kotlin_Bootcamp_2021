@@ -39,3 +39,30 @@ git commit -m "1st commit"
 git status
 git add strogonoff.md receitas/
 
+git config --list
+
+git config --global --unset user.email
+git config --global --unset user.name
+
+
+git remote add origin https://github.com/diogovl/DIO_Kotlin_Bootcamp_2021.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
