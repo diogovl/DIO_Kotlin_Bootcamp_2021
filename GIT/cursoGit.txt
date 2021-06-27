@@ -47,7 +47,8 @@ git config --global --unset user.name
 
 git remote add origin https://github.com/diogovl/DIO_Kotlin_Bootcamp_2021.git
 
-
+git remove -v
+git push origin master
 
 
 
